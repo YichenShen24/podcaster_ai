@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Podcaster AI
 
-## Getting Started
+Podcaster AI is a cutting-edge application that enables users to generate and manage AI-driven podcasts. It utilizes OpenAI's text and image generation capabilities along with text-to-speech (TTS) to create high-quality, AI-generated content. The platform is built using Next.js and Tailwind CSS for a seamless UI/UX, with MongoDB as the database and Clerk for authentication.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **AI-Generated Content**: Uses OpenAI for text and image generation.
+- **Text-to-Speech (TTS)**: Converts AI-generated text into human-like speech.
+- **User Authentication**: Secured with Clerk.
+- **Credit System**: Implements Stripe for handling credits and transactions.
+- **Logo Editing Tools**:
+  - Image Restore
+  - Generative Fill
+  - Object Remove
+  - Object Recolor
+  - Background Remove
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Frontend**: Next.js, Tailwind CSS
+- **Backend**: MongoDB, Node.js
+- **Authentication**: Clerk
+- **Payments**: Stripe
+- **AI Services**: OpenAI (text & image generation, TTS)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Installation
 
-## Learn More
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/podcaster-ai.git
+   cd podcaster-ai
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Set up environment variables in a `.env` file:
+   ```env
+   NEXT_PUBLIC_CLERK_FRONTEND_API=<your-clerk-api>
+   MONGODB_URI=<your-mongodb-uri>
+   STRIPE_SECRET_KEY=<your-stripe-secret-key>
+   OPENAI_API_KEY=<your-openai-api-key>
+   ```
+4. Run the development server:
+   ```sh
+   npm run dev
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+## Usage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Sign up or log in using Clerk authentication.
+- Generate podcast scripts using AI.
+- Convert text into speech with AI-powered TTS.
+- Customize podcast visuals with AI-powered image generation.
+- Manage AI credits through Stripe integration.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Credits
 
-## Deploy on Vercel
+Podcaster AI integrates the following third-party services:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **OpenAI** for text generation, image generation, and text-to-speech.
+- **Stripe** for handling payments and credit transactions.
+- **Clerk** for authentication.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Acknowledgment
+
+This project was inspired by **JS Mastery** and its contributions to the developer community.
+
+## Contact
+
+For questions or suggestions, reach out to Yichen at snowsyc524@gmail.com.
